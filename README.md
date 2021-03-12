@@ -20,4 +20,23 @@
 - every block in the chain has a unique hash - fingerprint, so that we can later identify which data is in the block
 - if you change the data in the block, that action will also change the hash, making it invalid
 - if the block is changed, a new block will be made and the old one will also stay in the chain 
-- 
+- transaction - 
+- wallet - 
+- signature - 
+- mempool - 
+- network - 
+- consensus - 
+- hashing - 
+- block - 
+- blockchain -
+- ledger - list of transaction records. who sent money, who recieved, when and how much
+
+### Blobkchain and finances
+- let's say there are no banks and we want to make a transaction from Alice to Bob
+- Alice has some goods that she wants to share and Bob too
+- trading goods is the first way we can achieve this. the problem is that often people cannot agree on how much something is worth
+- because of that, money is introduced as the mechanism for easier trading (in direct corelation with gold)
+- with oney involved, if we want to make a transaction from A to B, we have to do it with the bank in between
+- the bank is slow, takes fees from transactions and have all of our personal and financial data. they can choose if they want to share it with us
+- blockchain allows us to store these transactions on the public ledger with better security
+
