@@ -13,7 +13,6 @@
 - in the example of supply chain, in traditional cases, data is mostly always not shared between companies and it has a problem with being up to data
 - no matter the data is public, it is also anonymous thanks to cryptography
 
-
 ### Concepts
 - transaction is a record that contains the data of the sender, the reciever and the amount
 - when enough transactions are made to make a block, that block is put on the chain permanently
@@ -26,10 +25,13 @@
 - mempool - 
 - network - 
 - consensus - 
-- hashing - 
-- block - 
+- hashing - digital fingerprint for a piece of data
+- block - group of transactions bundled together. every block has its own hash
 - blockchain -
 - ledger - list of transaction records. who sent money, who recieved, when and how much
+- nonce - an arbitrary number that can be used just once in a cryptographic communication. It is similar in spirit to a nonce word, hence the name. It is often a random or pseudo-random number issued in an authentication protocol to ensure that old communications cannot be reused in replay attacks.
+- merkle root - Every transaction has a hash associated with it. In a block, all of the transaction hashes in the block are themselves hashed (sometimes several times -- the exact process is complex), and the result is the Merkle root. In other words, the Merkle root is the hash of all the hashes of all the transactions in the block
+- merkle tree - 
 
 ### Blobkchain and finances
 - let's say there are no banks and we want to make a transaction from Alice to Bob
