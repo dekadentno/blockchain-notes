@@ -23,7 +23,7 @@
 - wallet - 
 - signature - 
 - mempool - 
-- network - 
+- network - p2p network is a network where all users are acting like nodes that are connected between each other and can share data directly. distributed network allows information to be spread out across many users. types of networks - centrylized, decentralized, distributed (every type has its own pros and cons). in the case of blockchain, every node has a copy of the whole database (blockchain)
 - consensus - 
 - hashing - digital fingerprint for a piece of data
 - block - group of transactions bundled together. every block has its own hash
