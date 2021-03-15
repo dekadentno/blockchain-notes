@@ -20,7 +20,7 @@
 - every block in the chain has a unique hash - fingerprint, so that we can later identify which data is in the block
 - if you change the data in the block, that action will also change the hash, making it invalid
 - if the block is changed, a new block will be made and the old one will also stay in the chain 
-- wallet - 
+- wallet - a mechanism for establishing our identity on the blockchain. it allows us to do things like sending coins, recieving them etc with the use of public keys, private keys and wallet addresses. the wallet address is the unique identifier for your wallet. we can share it with others so that we can recieve and send coins.
 - signature - 
 - mempool - waiting line for transactions (because they have to be verified by the network) before they enter the blockchain. The tranzactions sit in the memory of all the nodes in the blockchain. The blockchain can only handle so much information at once, and the backlog of information goes here
 - network - p2p network is a network where all users are acting like nodes that are connected between each other and can share data directly. distributed network allows information to be spread out across many users. types of networks - centrylized, decentralized, distributed (every type has its own pros and cons). in the case of blockchain, every node has a copy of the whole database (blockchain)
@@ -73,3 +73,13 @@ Here you can find the explaination on how bitcoin is moved areound the network
 - proof of stake - there are no more miners; instead, there are Validators. These validators, or stakeholders, determine which block makes it onto the blockchain. In order to validate transactions and create blocks, validators put up their own coins as “stake”. Think of it as placing a bet - if they validate a fraudulent transaction, they lose their holdings as well as their rights to participate as a validator in the future.
 - Delegated Byzantine Fault Tolerance (DBFT) - Consensus algorithm based on assigning roles to nodes to help coordinate consensus.
 - other algorithms - proof of activity, proof of burn
+
+### Blockchain identity
+Like a social security number, a bank account, a drivers license, or a club membership, your blockchain identity is how you establish yourself in the world, in this case the blockchain world. By using hashing algorithms, blockchains help create our identity in a way that is extremely secure.
+
+
+- wallet - a mechanism for establishing our identity on the blockchain. it allows us to do things like sending coins, recieving them etc with the use of public keys, private keys and wallet addresses. 
+- wallet address is the unique identifier for your wallet. we can share it with others so that we can recieve and send coins. it is made from the public key with SHA256 and RIPEMD160 in base 58.
+- private key - allows you to spend coins from your wallet
+- public key - shared with everyone, derivated from the private key. cannot be used to spend coins or access them. keys are cryptographicaly related.
+- ecdsa - Elliptic Curve Digital Signature Algorithm - one way hashing algorithm for getting a public key from a private key. very difficult to reverse.
