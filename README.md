@@ -33,6 +33,7 @@
 - merkle tree - 
 - utxo - unspent transaction outputs - transactions that haven’t been sent to someone else already. if you are ready to spend bitcoin, you need to tell Bitcoin Core which UTXO you would like to spend.
 
+![typesofnetworks](https://user-images.githubusercontent.com/12261635/111224461-c805f680-85de-11eb-8f8b-558f1a471e12.png)
 
 ### Blobkchain and finances
 - let's say there are no banks and we want to make a transaction from Alice to Bob
@@ -74,6 +75,8 @@ Here you can find the explaination on how bitcoin is moved areound the network
 - Delegated Byzantine Fault Tolerance (DBFT) - Consensus algorithm based on assigning roles to nodes to help coordinate consensus.
 - other algorithms - proof of activity, proof of burn
 
+![pow-vs-pos](https://user-images.githubusercontent.com/12261635/111224389-af95dc00-85de-11eb-9d00-c6f8cbc0e116.png)
+
 ### Blockchain identity
 Like a social security number, a bank account, a drivers license, or a club membership, your blockchain identity is how you establish yourself in the world, in this case the blockchain world. By using hashing algorithms, blockchains help create our identity in a way that is extremely secure.
 
@@ -84,7 +87,10 @@ Like a social security number, a bank account, a drivers license, or a club memb
 - public key - shared with everyone, derivated from the private key. cannot be used to spend coins or access them. keys are cryptographicaly related.
 - ecdsa - Elliptic Curve Digital Signature Algorithm - one way hashing algorithm for getting a public key from a private key. very difficult to reverse.
 
+<img width="1217" alt="addressgeneration" src="https://user-images.githubusercontent.com/12261635/111224313-93923a80-85de-11eb-9221-89a54f1cfd92.png">
+
 ### Types of wallets
-- Non-deterministic Wallet: (random wallets) A wallet where private keys are generated from random numbers.
-- Deterministic Wallet: A wallet where addresses, private keys, and public keys can be traced back to their original seed words.
-- Hierarchical Deterministic Wallet: An advanced type of deterministic wallet that contains keys derived in a tree structure.
+- Non-deterministic Wallet - (random wallets) A wallet where private keys are generated from random numbers. no way to determine how keys were derived. a random number generates a PK that generates a SK that generates an address. every time a new key is generated, you need to back up the wallet in order not to lose the keys.
+- Deterministic Wallet - A wallet where addresses, private keys, and public keys can be traced back to their original seed words. Nothing is random, everything is determened. Easy migration of keys betwee different wallets.
+- Hierarchical Deterministic Wallet - An advanced type of deterministic wallet that contains keys derived in a tree structure. Can be shared partially or entirely with different systems.
+
