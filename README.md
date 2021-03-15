@@ -42,3 +42,27 @@
 - the bank is slow, takes fees from transactions and have all of our personal and financial data. they can choose if they want to share it with us
 - blockchain allows us to store these transactions on the public ledger with better security
 
+### Understanding transactions
+
+A transaction is when someone sends money to someone else.
+
+When someone in the group spends money, they tell everyone else in the group to whom they're sending their money. However, it's done in a way that makes it really hard to actually tell who is sending and who is receiving. It's not 100% impossible to tell, but it would take someone a lot of time to figure out.
+
+When that someone sends money, everyone can check to ensure that that person actually has enough money to send what they claim to have sent. This is especially important to the receiver. If enough people say that the sender doesn't have enough money to send, the sender's transaction is ignored. He'll be able to try again in a little bit (and hopefully he'll be more honest or careful this time!).
+
+The really cool thing is that everyone who wants to send or receive money knows how much everyone else is sending or receiving, even though they can't really identify a person behind the transaction. Plus, a person can look at the history of every transaction since the beginning of this fun system. This is called the public ledger.
+
+Whenever someone sends money, they send a little bit extra along with their amount. This is called the transaction fee, and it's kinda like a tip. It's given as a reward to the person who solves the really hard math problem as an extra bonus! Over time, the reward money the solver earns will go away. Eventually, this transaction fee reward will be larger than the reward for solving ever was! So, this transaction fee gives people a reason to keep solving math problems forever.
+
+### The life of a Bitcoin Transaction
+Here you can find the explaination on how bitcoin is moved areound the network
+1. Get a copy of the blockchain - In order to interact with the shared list of transactions, we need a copy of it!
+2. Run Bitcoin Core -  is the Bitcoin computer program. Once you download it, you will be automatically connected to other computers who are also running bitcoin. These computers will send you their copy of the blockchain, and your computer will save the file.
+3. Reference a time you received Bitcoin - Remember there is no Bitcoin stored in your computer, it only exists on the blockchain. That means in order to send someone bitcoin, you have to reference a previous transaction on the blockchain when someone sent bitcoin to you. Bitcoin Core keeps track of all transactions ever made, but it specifically watches transactions that haven’t been sent to someone else already. Each one of these “unspent” transactions is called a UTXO. So if you are ready to spend bitcoin, you need to tell Bitcoin Core which UTXO you would like to spend.
+4. Sign the message with your private keys - Once you’ve picked the UTXO you want to spend, you need to create your digital signature. This is what you will send other computers in the network to prove you were the recipient of this UTXO. Bitcoin Core is also your wallet, which stores your private keys. Tell Bitcoin Core the UTXO you want to spend, and it will work through some special math to produce your digital signature from your private key.
+5. Broadcast your message to the network - Now you have a message to send to the network. It says, “I want to spend this UTXO, which is X amount of bitcoin. I want to send it to this address. Here is my digital signature, which proves I was the recipient of this UTXO.”
+6. Other computers in the network will pick up your message - First your computer will send this message to the several computers that are connected to it, via the internet. Then those computers will send the message to every computer that they are connected to. This process continues.. and in just a few seconds every computer in the network will have seen your message!
+7. Miners see your message and include it in their next block - Now the race begins. Computers who are using special equipment to add blocks to the chain will see your message and group it with other transaction messages. Remember, whoever wins the guessing game gets to add their version of the next block to the chain.. while also getting a reward of bitcoin. Each block can only fit so many transactions, so your message may not be included in the next block if there are many others in line before you.
+8. Once a miner solves a block, they send it to the rest of the network - Once a mining computer wins the guessing game, it’s their turn to add a block to the chain. They will send out their block with your transaction inside!
+9. Computers in the network will verify the block and add to their chain - Now the rest of the network will add this new block to their chain, and your transaction is official and confirmed.
+10. Repeat
