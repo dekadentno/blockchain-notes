@@ -1,6 +1,7 @@
 # Blockchain Notes
 
 ### Blockchain
+- incorruptible digital ledger of economic transactions that can be programmed to record not just financial transactions but virtually everything of value
 - "shared db that contains a list of transactions (shared between the users in the netword)"
 - data is not held by any central authority and it is impossible to manipulate with the data in the chain
 - we get a shared permanent history of transactions that we can trust, it is accurate and up to date
@@ -19,7 +20,6 @@
 - every block in the chain has a unique hash - fingerprint, so that we can later identify which data is in the block
 - if you change the data in the block, that action will also change the hash, making it invalid
 - if the block is changed, a new block will be made and the old one will also stay in the chain 
-- transaction - 
 - wallet - 
 - signature - 
 - mempool - waiting line for transactions (because they have to be verified by the network) before they enter the blockchain. The tranzactions sit in the memory of all the nodes in the blockchain. The blockchain can only handle so much information at once, and the backlog of information goes here
@@ -27,7 +27,6 @@
 - consensus - which transactions are valid? Consensus is how the blockchain makes decisions. Things like proof of work, proof of stake, and DBFT are all consensus algorithms that find out which transactions are most trustworthy.
 - hashing - digital fingerprint for a piece of data
 - block - group of transactions bundled together (from the mempool). every block has its own hash
-- blockchain -incorruptible digital ledger of economic transactions that can be programmed to record not just financial transactions but virtually everything of value
 - ledger - list of transaction records. who sent money, who recieved, when and how much
 - nonce - an arbitrary number that can be used just once in a cryptographic communication. It is similar in spirit to a nonce word, hence the name. It is often a random or pseudo-random number issued in an authentication protocol to ensure that old communications cannot be reused in replay attacks. it is very important when talking about proof of work. miners are trying to find the nonce number in order to solve the PoW algorithm
 - merkle root - Every transaction has a hash associated with it. In a block, all of the transaction hashes in the block are themselves hashed (sometimes several times -- the exact process is complex), and the result is the Merkle root. In other words, the Merkle root is the hash of all the hashes of all the transactions in the block
@@ -70,6 +69,7 @@ Here you can find the explaination on how bitcoin is moved areound the network
 10. Repeat
 
 ### Consensus algorithms
-- proof of work - consensus algorithm. whoever puts in the most work to contribute to the system is the most trustworthy. miners are trying to solve the problems and are rewarded with the fee from the users transaction with additional coins provided by the network (only way where new coins are made).
-- proof of stake - consensus algorithm. concept states that a person can mine or validate block transactions according to how many coins he or she holds. there are no miners, only validators. validators (stakeholders) do not need to invest in mining equipment. validators put up their own coins as stake, as they vote for the valid transactions. they can loose their stake and their right to vote if they "bet" on an fraudy transaction.
+- proof of work - PoW involves miner nodes, or miners, to solve a math puzzle that requires a lot of computation power. Whichever miner is able to solve the puzzle the fastest is able to add a block of transactions to the blockchain, and in return, they are paid the transaction fees from all the transactions included in the block as well as paid by the network with bitcoins that were newly created upon the “mining” of the block
+- proof of stake - there are no more miners; instead, there are Validators. These validators, or stakeholders, determine which block makes it onto the blockchain. In order to validate transactions and create blocks, validators put up their own coins as “stake”. Think of it as placing a bet - if they validate a fraudulent transaction, they lose their holdings as well as their rights to participate as a validator in the future.
 - Delegated Byzantine Fault Tolerance (DBFT) - Consensus algorithm based on assigning roles to nodes to help coordinate consensus.
+- other algorithms - proof of activity, proof of burn
