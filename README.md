@@ -92,5 +92,5 @@ Like a social security number, a bank account, a drivers license, or a club memb
 ### Types of wallets
 - Non-deterministic Wallet - (random wallets) A wallet where private keys are generated from random numbers. no way to determine how keys were derived. a random number generates a PK that generates a SK that generates an address. every time a new key is generated, you need to back up the wallet in order not to lose the keys.
 - Deterministic Wallet - A wallet where addresses, private keys, and public keys can be traced back to their original seed words. Nothing is random, everything is determened. Easy migration of keys betwee different wallets.
-- Hierarchical Deterministic Wallet - An advanced type of deterministic wallet that contains keys derived in a tree structure. Can be shared partially or entirely with different systems.
+- Hierarchical Deterministic Wallet - An advanced type of deterministic wallet that contains keys derived in a tree structure. Can be shared partially or entirely with different systems. Benefit of sharing only parts of the tree structure and that you don’t need to backup all your keys, whenever you make transactions, you just need to backup the Seed praise securely. HD wallets are the best option to save your crypto holding securely.
 
