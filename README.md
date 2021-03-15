@@ -29,10 +29,12 @@
 - block - group of transactions bundled together (from the mempool). every block has its own hash
 - blockchain -
 - ledger - list of transaction records. who sent money, who recieved, when and how much
-- nonce - an arbitrary number that can be used just once in a cryptographic communication. It is similar in spirit to a nonce word, hence the name. It is often a random or pseudo-random number issued in an authentication protocol to ensure that old communications cannot be reused in replay attacks.
+- nonce - an arbitrary number that can be used just once in a cryptographic communication. It is similar in spirit to a nonce word, hence the name. It is often a random or pseudo-random number issued in an authentication protocol to ensure that old communications cannot be reused in replay attacks. it is very important when talking about proof of work. miners are trying to find the nonce number in order to solve the PoW algorithm
 - merkle root - Every transaction has a hash associated with it. In a block, all of the transaction hashes in the block are themselves hashed (sometimes several times -- the exact process is complex), and the result is the Merkle root. In other words, the Merkle root is the hash of all the hashes of all the transactions in the block
 - merkle tree - 
 - utxo - unspent transaction outputs - transactions that haven’t been sent to someone else already. if you are ready to spend bitcoin, you need to tell Bitcoin Core which UTXO you would like to spend.
+- proof of work - consensus algorithm. whoever puts in the most work to contribute to the system is the most trustworthy. miners are trying to solve the problems and are rewarded with the fee from the users transaction with additional coins provided by the network (only way where new coins are made).
+- proof of stake - consensus algorithm. concept states that a person can mine or validate block transactions according to how many coins he or she holds. there are no miners, only validators. validators (stakeholders) do not need to invest in mining equipment. validators put up their own coins as stake, as they vote for the valid transactions. they can loose their stake and their right to vote if they "bet" on an fraudy transaction.
 
 ### Blobkchain and finances
 - let's say there are no banks and we want to make a transaction from Alice to Bob
