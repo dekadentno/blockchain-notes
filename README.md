@@ -22,11 +22,11 @@
 - transaction - 
 - wallet - 
 - signature - 
-- mempool - 
+- mempool - waiting line for transactions (because they have to be verified by the network) before they enter the blockchain. The tranzactions sit in the memory of all the nodes in the blockchain. The blockchain can only handle so much information at once, and the backlog of information goes here
 - network - p2p network is a network where all users are acting like nodes that are connected between each other and can share data directly. distributed network allows information to be spread out across many users. types of networks - centrylized, decentralized, distributed (every type has its own pros and cons). in the case of blockchain, every node has a copy of the whole database (blockchain)
-- consensus - 
+- consensus - which transactions are valid? Consensus is how the blockchain makes decisions. Things like proof of work, proof of stake, and DBFT are all consensus algorithms that find out which transactions are most trustworthy.
 - hashing - digital fingerprint for a piece of data
-- block - group of transactions bundled together. every block has its own hash
+- block - group of transactions bundled together (from the mempool). every block has its own hash
 - blockchain -
 - ledger - list of transaction records. who sent money, who recieved, when and how much
 - nonce - an arbitrary number that can be used just once in a cryptographic communication. It is similar in spirit to a nonce word, hence the name. It is often a random or pseudo-random number issued in an authentication protocol to ensure that old communications cannot be reused in replay attacks.
