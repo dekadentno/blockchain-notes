@@ -116,3 +116,12 @@ Private keys generate public keys that generate wallet addresses.
 - there are 2 ways to do it; by using a seed or using a private key
 - the seed  the 12 words you were given when creating your wallet. If you can remember these words, you can use them to restore your wallet. The benefit of restoring your identity using the seed is that it can be much simpler than using the private key. It's easier to remember a list of words than a random string of numbers and letters
 - When restoring a wallet using a private key, there are 2 ways to do it. You can either import or sweep this key, and it’s useful to understand the difference. Sweep a wallet if you're worried about wallet security. When in doubt, stick with sweeping. It’s more secure this way, and it avoids some problems that are associated with importing a wallet.
+
+### Bitcoin Core
+- implementation of bitcoin that encompasses all of the software behind bitcoin 
+- developer tools and environments
+- other names: bitcoin qt, satoshi client
+- essential features: 1) bitcoin core trx verification engine - allows you to verify transactions happening in the btc network 2) explore and validate all of the blockchain 3) crypto wallet 
+
+![wsi-imageoptim-main20vs20test1](https://user-images.githubusercontent.com/12261635/111381497-129e7600-86a6-11eb-961f-65a62d9f69a1.png)
+
