@@ -123,5 +123,8 @@ Private keys generate public keys that generate wallet addresses.
 - other names: bitcoin qt, satoshi client
 - essential features: 1) bitcoin core trx verification engine - allows you to verify transactions happening in the btc network 2) explore and validate all of the blockchain 3) crypto wallet 
 
+### Testnet
+Alternative bitcoin blockchain that provides a test environment for applications and developers. Alternatively, there's also Regnet (private regression testing network) for local testing without validations nor peers.
+
 ![wsi-imageoptim-main20vs20test1](https://user-images.githubusercontent.com/12261635/111381497-129e7600-86a6-11eb-961f-65a62d9f69a1.png)
 
