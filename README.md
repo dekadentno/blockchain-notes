@@ -75,6 +75,8 @@ Here you can find the explaination on how bitcoin is moved areound the network
 - after that, the transaction message is broadcasted to the chain as an UTXO, which contain the proof of ownership of that transaction  
 - transactions are made of multiple inputs and outputs. By understanding the inputs, outputs, miners fees, and amount sent, we can determine the balance of users wallets before and after transactions are made
 
+![700px-Bitcoin-transaction-life-cycle](https://user-images.githubusercontent.com/12261635/111376824-39f24480-86a0-11eb-9914-a226876470f1.png)
+
 ### Consensus algorithms
 - proof of work - PoW involves miner nodes, or miners, to solve a math puzzle that requires a lot of computation power. Whichever miner is able to solve the puzzle the fastest is able to add a block of transactions to the blockchain, and in return, they are paid the transaction fees from all the transactions included in the block as well as paid by the network with bitcoins that were newly created upon the “mining” of the block
 - proof of stake - there are no more miners; instead, there are Validators. These validators, or stakeholders, determine which block makes it onto the blockchain. In order to validate transactions and create blocks, validators put up their own coins as “stake”. Think of it as placing a bet - if they validate a fraudulent transaction, they lose their holdings as well as their rights to participate as a validator in the future.
