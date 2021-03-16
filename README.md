@@ -69,6 +69,12 @@ Here you can find the explaination on how bitcoin is moved areound the network
 9. Computers in the network will verify the block and add to their chain - Now the rest of the network will add this new block to their chain, and your transaction is official and confirmed.
 10. Repeat
 
+### Signing a transaction
+- we are signing a transaction to know that it's valid (and that we can trust it) and that we own it. We validate transactions and assign ownership using what's known as a digital signature
+- the transaction is signed with your private key
+- after that, the transaction message is broadcasted to the chain as an UTXO, which contain the proof of ownership of that transaction  
+- transactions are made of multiple inputs and outputs. By understanding the inputs, outputs, miners fees, and amount sent, we can determine the balance of users wallets before and after transactions are made
+
 ### Consensus algorithms
 - proof of work - PoW involves miner nodes, or miners, to solve a math puzzle that requires a lot of computation power. Whichever miner is able to solve the puzzle the fastest is able to add a block of transactions to the blockchain, and in return, they are paid the transaction fees from all the transactions included in the block as well as paid by the network with bitcoins that were newly created upon the “mining” of the block
 - proof of stake - there are no more miners; instead, there are Validators. These validators, or stakeholders, determine which block makes it onto the blockchain. In order to validate transactions and create blocks, validators put up their own coins as “stake”. Think of it as placing a bet - if they validate a fraudulent transaction, they lose their holdings as well as their rights to participate as a validator in the future.
@@ -94,3 +100,17 @@ Like a social security number, a bank account, a drivers license, or a club memb
 - Deterministic Wallet - A wallet where addresses, private keys, and public keys can be traced back to their original seed words. Nothing is random, everything is determened. Easy migration of keys betwee different wallets.
 - Hierarchical Deterministic Wallet - An advanced type of deterministic wallet that contains keys derived in a tree structure. Can be shared partially or entirely with different systems. Benefit of sharing only parts of the tree structure and that you don’t need to backup all your keys, whenever you make transactions, you just need to backup the Seed praise securely. HD wallets are the best option to save your crypto holding securely. The only disadvantage is that everything is derived from the master key so it requires a strong backup.
 
+### Keys
+Private keys generate public keys that generate wallet addresses.
+- private key - 256 bit random number between 1 and 2^256
+- it can be represented in various formats (hex, wif, wif-compressed...). all of them have different use cases
+- every private key is unique. that's possible because 2^256 is a very large number. There is a 1 in over 115 quattuorvigintillion (that’s a 78 digit number) chance of finding a collision.
+- there are methods for generating a private key. we can just flip a coin 256 times and write down 1 for heads and 0 for tails.
+- programmatically, we have to find a source of entropy (lack of order or predictability, degree of randomness)
+- random number generators have to be cryptographically secure
+
+### Restoring your wallet identity
+- times when we forget our password or lost our 2fa device or our computer gets stolen
+- there are 2 ways to do it; by using a seed or using a private key
+- the seed  the 12 words you were given when creating your wallet. If you can remember these words, you can use them to restore your wallet. The benefit of restoring your identity using the seed is that it can be much simpler than using the private key. It's easier to remember a list of words than a random string of numbers and letters
+- When restoring a wallet using a private key, there are 2 ways to do it. You can either import or sweep this key, and it’s useful to understand the difference. Sweep a wallet if you're worried about wallet security. When in doubt, stick with sweeping. It’s more secure this way, and it avoids some problems that are associated with importing a wallet.
