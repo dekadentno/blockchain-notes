@@ -56,6 +56,13 @@ The really cool thing is that everyone who wants to send or receive money knows 
 
 Whenever someone sends money, they send a little bit extra along with their amount. This is called the transaction fee, and it's kinda like a tip. It's given as a reward to the person who solves the really hard math problem as an extra bonus! Over time, the reward money the solver earns will go away. Eventually, this transaction fee reward will be larger than the reward for solving ever was! So, this transaction fee gives people a reason to keep solving math problems forever.
 
+Inputs from a particuar transaction is an unspent output from a previous transaction. All inputs reference back to an output. When a user recieves coins, that amount is recorded on the blockchain as an UTXO (unspent transaction output). 
+
+There is no sunch thing as a stored balance for an account or bitcoin address. There's just records of UTXS tied to a specific owner that are on the blockchain. 
+
+![Screenshot at 2021-03-21 20-41-54](https://user-images.githubusercontent.com/12261635/111918552-e445df80-8a85-11eb-909e-da1a22ca014a.png)
+
+
 ### The life of a Bitcoin Transaction
 Here you can find the explaination on how bitcoin is moved areound the network
 1. Get a copy of the blockchain - In order to interact with the shared list of transactions, we need a copy of it!
