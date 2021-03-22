@@ -62,6 +62,27 @@ There is no sunch thing as a stored balance for an account or bitcoin address. T
 
 ![Screenshot at 2021-03-21 20-41-54](https://user-images.githubusercontent.com/12261635/111918552-e445df80-8a85-11eb-909e-da1a22ca014a.png)
 
+### Transaction data models
+
+![Screenshot at 2021-03-21 20-44-28](https://user-images.githubusercontent.com/12261635/111919074-57e8ec00-8a88-11eb-9a4a-6001c17fc895.png)
+
+- Version - All transactions include information about the Bitcoin Version number so we know which rules this transaction follows.
+- Input Count - Which is how many inputs were used for this transaction
+- Previous output hash - All inputs reference back to an output (UTXO). This points back to the transaction containing the UTXO that will be spent in this input. - The hash value of this UTXO is saved in a reverse order here.
+- Previous output index - The transaction may have more than one UTXO which are referenced by their index number. The first index is 0.
+- Unlocking Script Size - This is the size of the Unlocking Script in bytes.
+- Unlocking Script - This is the hash of the Unlocking Script that fulfills the conditions of the UTXO Locking Script.
+- Sequence Number - This is a deprecated feature of bitcoin, currently set to ffffffff by default.
+- Output Count - which tells us how many outputs were produced from this transaction.
+- Amount - The amount of Bitcoin outputted in Satoshis (the smallest bitcoin unit). 10^8 Satoshis = 1 Bitcoin.
+- Locking Script Size - This is the size of the Locking Script in bytes.
+- Locking Script - This is the hash of the Locking Script that specifies the conditions that must be met to spend this output.
+- Locktime - The locktime field indicates the earliest time or the earliest block a transaction can be added to the blockchain 
+
+Bitcoin clients validate transactions by checking that the unlocking script (often named scriptSig) solves the locking script (often named scriptPubKey). Each UTXO has a locking script that contains conditions required to spend it. In other words, each UTXO contains a puzzle that needs to be solved in order for the input to be spend.  
+
+<img width="1280" alt="bitcoin-scripts" src="https://user-images.githubusercontent.com/12261635/111919079-5ae3dc80-8a88-11eb-8a36-8f9a60fd9c76.png">
+
 
 ### The life of a Bitcoin Transaction
 Here you can find the explaination on how bitcoin is moved areound the network
