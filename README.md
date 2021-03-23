@@ -93,6 +93,33 @@ Steps:
 - Step 6 - Submit the Raw Transaction to the Network
 - Step 7 - Query the TxID of the Transaction we sent
 
+Let's say we have a UTXO of 0.050 BTC in "from_address", and we want to send 0.030 BTC to a receiving address called "to_address".
+
+Hence we will have 2 transactions here.
+The first transaction will transfer 0.030 BTC to "to_address".
+The second transaction will send the balance back to our "from_address".
+Let's also assume that our transaction fee would cost us 0.0005 BTC. In this case, our balance back to the "from_address" would be (0.050 - 0.030) - 0.0005 = 0.0195
+To summarize:
+Sum(Inputs) - Sum(Outputs) = Transaction Fee
+(0.050 BTC) - (0.030 BTC + 0.0195 BTC) = 0.0005 BTC
+```
+createrawtransaction '[{"txid":"TXID","vout": VOUT}]’’{“to_address”:amount1, “from_address”:amount2}’
+```
+This example has two outputs. The first is to send 0.030 BTC to the receiving address. The second is to send 0.0195 BTC as change back to the original address.
+The result is a hex string:
+```
+02000000011cc4f41b92dd036a8535b5b461ebf01af84841072472c105730f323564f0a2c90000000000ffffffff02808d5b0000000000160014c1a138b2223cb443c9e0a2b4699953bf489a15a600093d0000000000160014db0dd2767ac378cdd001ec7ca740c4910364655c00000000
+```
+To confirm that everything processed correctly, we can use the by decoderawtransaction command.
+As we can see, the `scriptSig` object is empty, and that means that the transaction is still not signed. Also, we can see that our transaction has 1 input and 2 outputs.
+In order to sign the transaction, we want to use the `signrawtransactionwithwallet` and pass the hex string retrieved from the `createrawtransaction` step:
+```
+signrawtransactionwithwallet 02000000011cc4f41b92dd036a8535b5b461ebf01af84841072472c105730f323564f0a2c90000000000ffffffff02808d5b0000000000160014c1a138b2223cb443c9e0a2b4699953bf489a15a600093d0000000000160014db0dd2767ac378cdd001ec7ca740c4910364655c00000000
+```
+
+We can use decoderawtransaction again, with the result from `signrawtransactionwithwallet`, to view the changes after signing. Use the outputted hex encoded raw hash result from signrawtransaction. Notice that the scriptSig field is now filled out. It contains a digital signature that proves we own the wallet address and can spend the UTXO.
+
+
 ### Common RPCs
 Common RPCs can be found here and explained on the links below:
 ```
@@ -101,7 +128,8 @@ Common RPCs can be found here and explained on the links below:
 - gettxout - https://chainquery.com/bitcoin-cli/gettxout
 - listunspent - https://chainquery.com/bitcoin-cli/listunspent
 - createrawtransaction - https://chainquery.com/bitcoin-cli/createrawtransaction
-
+- decoderawtransaction - https://chainquery.com/bitcoin-cli/decoderawtransaction
+- signrawtransactionwithwallet - https://chainquery.com/bitcoin-cli/signrawtransactionwithwallet
 ```
 
 ### The life of a Bitcoin Transaction
