@@ -118,11 +118,11 @@ signrawtransactionwithwallet 02000000011cc4f41b92dd036a8535b5b461ebf01af84841072
 ```
 
 We can use decoderawtransaction again, with the result from `signrawtransactionwithwallet`, to view the changes after signing. Use the outputted hex encoded raw hash result from signrawtransaction. Notice that the scriptSig field is now filled out. It contains a digital signature that proves we own the wallet address and can spend the UTXO.
-
+To submit a transaction, we will use `sendrawtransaction` along with the hex. If the submission went through, we are returned the transaction hash (txid) in hex of the raw transaction that was submitted to the network. We can use the returned hex in `gettransaction` to check if everything went well.
 
 ### Common RPCs
 Common RPCs can be found here and explained on the links below:
-```
+- gettransaction - https://chainquery.com/bitcoin-cli/gettransaction
 - createwallet - https://chainquery.com/bitcoin-cli/createwallet
 - getnewaddress - https://chainquery.com/bitcoin-cli/getnewaddress
 - gettxout - https://chainquery.com/bitcoin-cli/gettxout
@@ -130,7 +130,7 @@ Common RPCs can be found here and explained on the links below:
 - createrawtransaction - https://chainquery.com/bitcoin-cli/createrawtransaction
 - decoderawtransaction - https://chainquery.com/bitcoin-cli/decoderawtransaction
 - signrawtransactionwithwallet - https://chainquery.com/bitcoin-cli/signrawtransactionwithwallet
-```
+- sendrawtransaction - https://chainquery.com/bitcoin-cli/sendrawtransaction
 
 ### The life of a Bitcoin Transaction
 Here you can find the explaination on how bitcoin is moved areound the network
