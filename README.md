@@ -83,6 +83,26 @@ Bitcoin clients validate transactions by checking that the unlocking script (oft
 
 <img width="1280" alt="bitcoin-scripts" src="https://user-images.githubusercontent.com/12261635/111919079-5ae3dc80-8a88-11eb-8a36-8f9a60fd9c76.png">
 
+### Creating a raw transaction
+Steps:
+- Step 1 - View all unspent confirmed UTXO in the wallet
+- Step 2 - View Details about a Specific UTXO
+- Step 3 - Create a Raw Transaction
+- Step 4 - Decode the Raw Transaction (to doublecheck it went through correctly)
+- Step 5 - Sign the Raw Transaction
+- Step 6 - Submit the Raw Transaction to the Network
+- Step 7 - Query the TxID of the Transaction we sent
+
+### Common RPCs
+Common RPCs can be found here and explained on the links below:
+```
+- createwallet - https://chainquery.com/bitcoin-cli/createwallet
+- getnewaddress - https://chainquery.com/bitcoin-cli/getnewaddress
+- gettxout - https://chainquery.com/bitcoin-cli/gettxout
+- listunspent - https://chainquery.com/bitcoin-cli/listunspent
+- createrawtransaction - https://chainquery.com/bitcoin-cli/createrawtransaction
+
+```
 
 ### The life of a Bitcoin Transaction
 Here you can find the explaination on how bitcoin is moved areound the network
