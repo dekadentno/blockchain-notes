@@ -81,7 +81,7 @@ There is no sunch thing as a stored balance for an account or bitcoin address. T
 
 Bitcoin clients validate transactions by checking that the unlocking script (often named scriptSig) solves the locking script (often named scriptPubKey). Each UTXO has a locking script that contains conditions required to spend it. In other words, each UTXO contains a puzzle that needs to be solved in order for the input to be spend.  
 
-<img width="1280" alt="bitcoin-scripts" src="https://user-images.githubusercontent.com/12261635/111919079-5ae3dc80-8a88-11eb-8a36-8f9a60fd9c76.png">
+![bitcoin-scripts](https://user-images.githubusercontent.com/12261635/111919079-5ae3dc80-8a88-11eb-8a36-8f9a60fd9c76.png)
 
 ### Creating a raw transaction
 Steps:
