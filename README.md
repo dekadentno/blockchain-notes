@@ -204,3 +204,12 @@ Alternative bitcoin blockchain that provides a test environment for applications
 
 ![wsi-imageoptim-main20vs20test1](https://user-images.githubusercontent.com/12261635/111381497-129e7600-86a6-11eb-961f-65a62d9f69a1.png)
 
+### Digital assets
+- digital asset - Digitally stored content or online account owned by an individual (accounts, subscriptions, images, mp3s, documentation, presentations, pdfs...). We are accessing them online and don't have to make them physically. 
+- securing assets using your digital identity
+- we can store digital assets on the blockchain, but it's not that trivial. The blockchain can grow over time, the cost of speed and storage will grow. Best way we can use the blockchain is to help improve the way we manage the ownership of these digital assets. 
+- verifying digital assets - checking the integrity of the digital asset to confirm that it cointains the "correct" sequence of bytes and has not been wrongfully accessed or altered (nothing to do with the trustworthyness, only checking if the initial file was changed)
+- proof of existance - concept (and service) that publicly proves and uthenticates any digital asset on the blockchain by verifying its hash. (primjer: ovjeravanje dokumenta kod javnog bilježnika). The document itself is not stored on the blockchain, only its hash - the private contents of the digital asset do not have to be publically revealed. The hash is linked to the date and time when the digital asset has been submitted. This way you can later confirm the date existed at this time and verify it. It can answer the questions like who is the author of something, when was something created, do people have the licence to modify this, 
+- encoding - Process of putting a sequence of characters into a specialized format for efficient transmission or storage
+- decoding - Takes encoded, raw, unreadable files and converts them back into human readable format
+
