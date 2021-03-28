@@ -1,0 +1,2 @@
+# Ethereum Smart Contracts Notes
+
