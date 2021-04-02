@@ -33,3 +33,10 @@
 * Ganache - functionality for building and testing your local blockchain
 * Truffle - A development environment, testing framework, and asset pipeline meant to make your life easier as an Ethereum developer
 * Geth - comand line interface for running a full ethereum node
+
+## DApps
+* application that has its backend code running on a decentralized peer-to-peer network 
+* in ethereum's case, that network is the world computer
+* that's different from traditional apps because they are centralized
+* those apps can run just like traditional applications
+* similar like google play, ethereum has a way to see the apps that are live right now
