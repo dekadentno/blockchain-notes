@@ -28,7 +28,7 @@
 * Etherscan - blockchain explorer
 * Metamask - MetaMask equips you with a key vault, secure login, token wallet, and token exchange—everything you need to manage your digital assets
 * Remix - online IDE for createing smart contracts
-* web3.js - collection of libraries for interacting with a local or remote ethereum node
+* [web3.js](https://web3js.readthedocs.io/en/v1.3.4/) - collection of libraries for interacting with a local or remote ethereum node
 * Infura - Gives you access to the Ethereum network without running your own local node
 * Ganache - functionality for building and testing your local blockchain
 * Truffle - A development environment, testing framework, and asset pipeline meant to make your life easier as an Ethereum developer
@@ -40,3 +40,16 @@
 * that's different from traditional apps because they are centralized
 * those apps can run just like traditional applications
 * similar like google play, ethereum has a way to see the apps that are live right now
+
+## Ethereum accounts
+An Ethereum account is an entity with an ether (ETH) balance that can send transactions on Ethereum. Accounts can be user-controlled or deployed as smart contracts.
+Ethereum has two account types:
+
+* Externally-owned (EOA) – controlled by anyone with the private keys - can send txs, initiate smart contracts, transfer value from its wallet
+* Contract (CA) – a smart contract deployed to the network, controlled by code. Has account balance, smart contract code, transaction count. Can transfer value and initiate another smart contract, execute smart contracts and manipulate storage.
+Both account types have the ability to:
+* Receive, hold and send ETH and tokens
+* Interact with deployed smart contracts
+
+![Screenshot at 2021-04-12 21-37-57](https://user-images.githubusercontent.com/12261635/114451316-62099080-9bd7-11eb-8d92-98a9d0828c8b.png)
+
