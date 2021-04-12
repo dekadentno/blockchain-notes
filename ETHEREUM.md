@@ -53,3 +53,11 @@ Both account types have the ability to:
 
 ![Screenshot at 2021-04-12 21-37-57](https://user-images.githubusercontent.com/12261635/114451316-62099080-9bd7-11eb-8d92-98a9d0828c8b.png)
 
+
+## Transactions
+An Ethereum transaction refers to an action initiated by an externally-owned account, in other words an account managed by a human, not a contract. For example, if Bob sends Alice 1 ETH, Bob's account must be debited and Alice's must be credited. This state-changing action takes place within a transaction.
+There are 2 transaction types:
+* message calls
+* contact creation
+
+![screen-shot-2018-11-05-at-8 09 37-am-2](https://user-images.githubusercontent.com/12261635/114456703-72246e80-9bdd-11eb-95e3-d514f7b5c040.png)
