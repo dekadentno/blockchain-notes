@@ -61,3 +61,15 @@ There are 2 transaction types:
 * contact creation
 
 ![screen-shot-2018-11-05-at-8 09 37-am-2](https://user-images.githubusercontent.com/12261635/114456703-72246e80-9bdd-11eb-95e3-d514f7b5c040.png)
+
+## Gas and Fees
+Gas is essential to the Ethereum network. It is the fuel that allows it to operate, in the same way that a car needs gasoline to run.
+Gas refers to the unit that measures the amount of computational effort required to execute specific operations on the Ethereum network.
+Since each Ethereum transaction requires computational resources to execute, each transaction requires a fee. Gas refers to the fee required to successfully conduct a transaction on Ethereum.
+In essence, gas fees are paid in Ethereum's native currency, ether (ETH). Gas prices are denoted in Gwei, which itself is a denomination of ETH - each Gwei is equal to 0.000000001 ETH (10-9 ETH). For example, instead of saying that your gas costs 0.000000001 Ether, you can say your gas costs 1 Gwei.
+Gas is needed to incentivize miners to pick up and validate transactions. It's a small fee paid for the cost of each bit of code executed to complete a smart contract. While the gas is specific to execution costs, it can be converted to its equivalent value in ether and given to the miner as reward for their effort.
+
+![Screenshot at 2021-04-12 23-16-43](https://user-images.githubusercontent.com/12261635/114463758-28d81d00-9be5-11eb-8568-e73a68d4574d.png)
+
+
+
