@@ -4,6 +4,9 @@
 Solidity is a contract-oriented, high-level language for implementing smart contracts. It was influenced by C++, Python and JavaScript and is designed to target the Ethereum Virtual Machine (EVM). Solidity is statically typed, supports inheritance, libraries and complex user-defined types among other features.
 Introduction repo can be found [here](https://github.com/udacity/nd1309-work-code/tree/master/Course_Identity_And_Smart_Contracts/Smart_Contracts_With_Solidity).
 
+Useful links:
+* https://github.com/manojpramesh/solidity-cheatsheet
+
 ## Smart Contracts
 * piece of code that lives on the Blockchain
 * a self operating computer program that automatically executes when certain conditions are met
