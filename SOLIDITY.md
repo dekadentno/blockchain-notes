@@ -81,4 +81,15 @@ contract BasicDataType {
 
 More here: https://docs.soliditylang.org/en/v0.5.0/types.html?highlight=memory
 
+## Type conversion
+There are 2 types:
+- implicit - If an operator is applied to different types, the compiler tries to implicitly convert one of the operands to the type of the other (the same is true for assignments). In general, an implicit conversion between value-types is possible if it makes sense semantically and no information is lost: uint8 is convertible to uint16 and int128 to int256, but int8 is not convertible to uint256 (because uint256 cannot hold e.g. -1)
+- explicit -  the compiler does not allow implicit conversion but you know what you are doing, explicit type conversion is sometimes possible. Note that this may give you some unexpected behavior and allows you to bypass some security features of the compiler, so be sure to test that the result is what you want
 
+## Complex data types
+- Arrays - https://docs.soliditylang.org/en/v0.8.3/types.html?highlight=mapping#arrays
+- Structs - https://docs.soliditylang.org/en/v0.8.3/types.html?highlight=mapping#structs
+- Mapping - https://docs.soliditylang.org/en/v0.8.3/types.html?highlight=mapping#mapping-types
+- Strings - https://docs.soliditylang.org/en/v0.8.3/types.html?highlight=mapping#string-literals-and-types
+- Bytes - https://docs.soliditylang.org/en/v0.8.3/types.html?highlight=mapping#fixed-size-byte-arrays
+- Enums - https://docs.soliditylang.org/en/v0.8.3/types.html?highlight=mapping#enums
