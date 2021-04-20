@@ -41,3 +41,10 @@ contract Message {
 }
 
 ```
+
+## Memory management
+- memory - Used for temporary storage of data, information is lost after function execution
+- storage - Used for variables in storage, stay with the contract, and the data persists
+- callData - Like a stack. Used for EVM call execution
+
+State variables (outside of functions) are stored in the storage. Local variables (inside functions) are just references to state variables.
