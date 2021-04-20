@@ -27,7 +27,7 @@
 ### Useful tools
 * Etherscan - blockchain explorer
 * Metamask - MetaMask equips you with a key vault, secure login, token wallet, and token exchange—everything you need to manage your digital assets
-* Remix - online IDE for createing smart contracts
+* Remix - online IDE with simulated blockchain for createing smart contracts
 * [web3.js](https://web3js.readthedocs.io/en/v1.3.4/) - collection of libraries for interacting with a local or remote ethereum node
 * Infura - Gives you access to the Ethereum network without running your own local node
 * Ganache - functionality for building and testing your local blockchain
